@@ -176,6 +176,57 @@
             border: 1px solid #e2e8f0;
         }
 
+        .achievements-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(33, 113, 181, 0.1);
+            border-left: 4px solid #cb181d;
+            backdrop-filter: blur(10px);
+        }
+
+        .achievements-section h3 {
+            font-size: 1.3rem;
+            color: #08519c;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .award-icon {
+            width: 28px;
+            height: 28px;
+            fill: #cb181d;
+        }
+
+        .achievements-list {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #2d3748;
+        }
+
+        .achievements-list p {
+            margin: 0.5rem 0;
+        }
+
+        .workshop-name {
+            font-weight: 600;
+            color: #cb181d;
+        }
+
+        .conference-name {
+            font-size: 0.95rem;
+            color: #5a6c7d;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
         @media (max-width: 768px) {
             .header {
                 padding: 1.5rem 1rem;
@@ -209,6 +260,23 @@
             .figure-section {
                 margin: 1.5rem auto;
                 padding: 0 1rem;
+            }
+
+            .achievements-section {
+                margin: 1rem;
+                padding: 1rem 1.5rem;
+            }
+
+            .achievements-section h3 {
+                font-size: 1.1rem;
+            }
+
+            .achievements-list {
+                font-size: 0.9rem;
+            }
+
+            .conference-name {
+                font-size: 0.85rem;
             }
 
             .nav-bar {
@@ -289,6 +357,24 @@
 
     <div class="figure-section">
         <img src="website_fig.png" alt="Overview figure showing shared parameter subspaces and cross-task linearity in emergently misaligned behavior">
+    </div>
+
+    <div class="achievements-section">
+        <h3>
+            <svg class="award-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4V4C4 5.11 4.89 6 6 6H7V11C7 13.76 9.24 16 12 16C14.76 16 17 13.76 17 11V6H18C19.11 6 20 5.11 20 4V2M9 11V6H15V11C15 12.65 13.65 14 12 14C10.35 14 9 12.65 9 11M9 18C9 17.45 9.45 17 10 17H14C14.55 17 15 17.45 15 18V19H16V21C16 21.55 15.55 22 15 22H9C8.45 22 8 21.55 8 21V19H9V18Z"/>
+            </svg>
+            Workshop Recognition
+            <svg class="award-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4V4C4 5.11 4.89 6 6 6H7V11C7 13.76 9.24 16 12 16C14.76 16 17 13.76 17 11V6H18C19.11 6 20 5.11 20 4V2M9 11V6H15V11C15 12.65 13.65 14 12 14C10.35 14 9 12.65 9 11M9 18C9 17.45 9.45 17 10 17H14C14.55 17 15 17.45 15 18V19H16V21C16 21.55 15.55 22 15 22H9C8.45 22 8 21.55 8 21V19H9V18Z"/>
+            </svg>
+        </h3>
+        <div class="achievements-list">
+            <p><span class="workshop-name">Oral Presentation</span> and <span class="workshop-name">Honorable Mention</span> at the UniReps Workshop</p>
+            <p><span class="workshop-name">Spotlight</span> at the MechInterp Workshop</p>
+            <p><span class="workshop-name">Accepted</span> at the CogInterp Workshop</p>
+            <p class="conference-name">Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)</p>
+        </div>
     </div>
 
     <div class="container">
