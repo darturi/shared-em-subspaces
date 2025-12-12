@@ -301,10 +301,85 @@
             }
         }
 
+        .contact-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(33, 113, 181, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #08519c;
+        }
+
+        .contact-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-link {
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(33, 113, 181, 0.2);
+        }
+
+        .contact-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            background-color: #f7fafc;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #08519c;
+            margin-top: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-affiliation {
+            font-size: 0.85rem;
+            color: #5a6c7d;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 768px) {
+            .contact-images {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
         @media (max-width: 480px) {
             .author-list {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+            }
+
+            .contact-images {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
             }
         }
     </style>
@@ -367,7 +442,7 @@
     </header>
 
     <div class="figure-section">
-        <img src="MechInterpLightning10.jpg" alt="Overview figure showing shared parameter subspaces and cross-task linearity in emergently misaligned behavior">
+        <img src="site_images/MechInterpLightning10.jpg" alt="Overview figure showing shared parameter subspaces and cross-task linearity in emergently misaligned behavior">
     </div>
 
     <div class="achievements-section">
@@ -409,6 +484,40 @@
                 landscape. By revealing this fundamental connection between parametric geometry and behavioral outcomes, we hope our work catalyzes further research on
                 parameter space interpretability and weight-based interventions.
             </p>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact-images">
+            <div class="contact-item">
+                <a href="www.linkedin.com/in/daniel-aarao-reis-arturi" class="contact-link">
+                    <img src="site_images/daniel_photo.png" alt="Contact 1" class="contact-image">
+                </a>
+                <div class="contact-name">Daniel Aarao Reis Arturi</div>
+                <div class="contact-affiliation">McGill University</div>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/eric-zhang-7aa686322/" class="contact-link">
+                    <img src="site_images/eric_photo.jpeg" alt="Contact 2" class="contact-image">
+                </a>
+                <div class="contact-name">Eric Zhang</div>
+                <div class="contact-affiliation">McMaster University</div>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/andrew-adrian-ansah/" class="contact-link">
+                    <img src="site_images/andrew_photo.jpg" alt="Contact 3" class="contact-image">
+                </a>
+                <div class="contact-name">Andrew Ansah</div>
+                <div class="contact-affiliation">University of Alberta</div>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/aishwaryahb/" class="contact-link">
+                    <img src="site_images/aish_photo.jpg" alt="Contact 4" class="contact-image">
+                </a>
+                <div class="contact-name">Aishwarya Balwani</div>
+                <div class="contact-affiliation">St. Jude Children's Research Hospital</div>
+            </div>
         </div>
     </div>
 </body>
